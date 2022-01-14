@@ -1565,7 +1565,7 @@ pragma solidity ^0.8.0;
 
 
 
-contract Yerr is ERC721, IERC2981, Ownable, ReentrancyGuard {
+contract Con is ERC721, IERC2981, Ownable, ReentrancyGuard {
     using Counters for Counters.Counter;
     using Strings for uint256;
 
@@ -1578,7 +1578,7 @@ contract Yerr is ERC721, IERC2981, Ownable, ReentrancyGuard {
     uint256 public constant MAX_MINTS_PER_TX = 20;
     uint256 public maxSupply = 1500;
 
-    uint256 public constant PUBLIC_SALE_PRICE = 0.02 ether;
+    uint256 public constant PUBLIC_SALE_PRICE = 0.03 ether;
     uint256 public NUM_FREE_MINTS = 300;
     bool public isPublicSaleActive = true;
 
@@ -1625,7 +1625,7 @@ contract Yerr is ERC721, IERC2981, Ownable, ReentrancyGuard {
 
 
     constructor(
-    ) ERC721("Yerr", "Yerr") {
+    ) ERC721("Con", "Con") {
     }
 
     // ============ PUBLIC FUNCTIONS FOR MINTING ============
